@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/tugass/tugas.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo">
+        <h2>Aplikasi To-Do List</h2>
+
+        <div class="instructions">
+          <ul>
+            <li>
+              Masukkan tugas pada kolom, lalu klik <strong>Tambah</strong> untuk
+              menambah ke daftar.
+            </li>
+            <li>
+              Klik <strong>Selesai</strong> untuk menandai tugas selesai, atau
+              <strong>Batal</strong> untuk membatalkan status selesai.
+            </li>
+            <li>
+              Klik <strong>Hapus</strong> untuk menghapus tugas dari daftar.
+            </li>
+          </ul>
+        </div>
+
+        <div class="pengisian">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Tulis tugas baru..."
+          />
+          <button id="add-task-btn">Tambah</button>
+        </div>
+
+        <div id="loading-indicator" class="loading" style="display: none">
+          Loading...
+        </div>
+
+        <ul id="task-list"></ul>
+      </div>
+    </div>
+    <script src="/tugass/tugas.js"></script>
+  </body>
+</html>
